@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <title>Author Signup</title>
+</head>
+<body>
+    <h1 id="responseMessage">Author Signup</h1>
+
+    <form id="signupForm" onsubmit="return false;">
+        Full Name: 
+        <input type="text" id="fullname" name="fullname" value="" onkeyup="validateFullname()" />
+        <p id="fullnameMessage"></p> 
+
+        Username: 
+        <input type="text" id="username" name="username" value="" onkeyup="validateUsername()" />
+        <p id="usernameMessage"></p> 
+
+        Password: 
+        <input type="password" id="password" name="password" value="" onkeyup="validatePassword()" />
+        <p id="passwordMessage"></p> 
+
+        Contact No: 
+        <input type="number" id="phone" name="phone" value="" onkeyup="validatePhone()" />
+        <p id="phoneMessage"></p> 
+
+        <input type="button" id="submitBtn" value="Submit" onclick="ajaxSignup()" />
+    </form>
+    <a href="login.html">Already have an account?</a>
+
+    <script src="../asset/signup.js"></script>
+</body>
+</html>
